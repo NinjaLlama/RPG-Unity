@@ -33,8 +33,21 @@ public class LevelSystem : MonoBehaviour {
 	{
 		player.maxHealth = player.maxHealth + (int)Mathf.Pow (level, 3);
 		player.maxMana = player.maxMana + (int)Mathf.Pow (level, 2);
-		player.damage = player.damage + 10;
+		player.damage = player.damage + (int)Mathf.Pow (level, 1) + 5;
 		player.health = player.maxHealth;
 		player.mana = player.maxMana;
+
+		GameObject.FindGameObjectWithTag ("magicAttack").GetComponent<Strike> ().damage = GameObject.FindGameObjectWithTag ("magicAttack").GetComponent<Strike> ().damage + (int)Mathf.Pow (level, 2);
+		//Debug.Log (GameObject.FindGameObjectWithTag ("magicAttack").GetComponent<Strike> ().damage);
+		GameObject[] enemies;
+		enemies = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject enemy in enemies) {
+			if (enemy.GetComponent<Mob> ().health > 0) {
+				enemy.GetComponent<Mob> ().maxHealth = enemy.GetComponent<Mob> ().maxHealth + (int)Mathf.Pow (level, 3);
+				enemy.GetComponent<Mob> ().health = enemy.GetComponent<Mob> ().maxHealth;
+				enemy.GetComponent<Mob> ().damage = enemy.GetComponent<Mob> ().damage + (int)Mathf.Pow (level, 1);
+			}
+		}
+
 	}
 }

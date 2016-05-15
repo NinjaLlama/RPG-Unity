@@ -35,8 +35,8 @@ public class ActionBar : MonoBehaviour {
 		updateSkillSlots ();
 		updateExpBar ();
 		// 0 = full health/mana
-		healthClipFactor = Mathf.Ceil(((1 - getPlayerHealthPercentage ()) * (healthOrbPos.y * 117)));
-		manaClipFactor = Mathf.Ceil(((1 - getPlayerManaPercentage ()) * (manaOrbPos.y * 117)));
+		healthClipFactor = Mathf.Ceil(((1 - getPlayerHealthPercentage ()) * (healthOrbPos.y * Screen.height * healthOrbPos.height)));
+		manaClipFactor = Mathf.Ceil(((1 - getPlayerManaPercentage ()) * (manaOrbPos.y * Screen.height * manaOrbPos.height)));
 	}
 
 	void init()

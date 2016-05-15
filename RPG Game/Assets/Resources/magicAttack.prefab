@@ -16,7 +16,7 @@ GameObject:
   - 82: {fileID: 8271264}
   m_Layer: 0
   m_Name: magicAttack
-  m_TagString: Untagged
+  m_TagString: magicAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d013714454b79438ca31394c903807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  damage: 50
+  speed: 15
+  damage: 15
 --- !u!135 &13578872
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1674,11 +1674,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: damage
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Mass
@@ -1707,6 +1707,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_PlayOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: magicAttack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

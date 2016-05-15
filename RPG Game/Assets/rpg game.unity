@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -685,8 +685,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.6911765, g: 0.43910038, b: 0.060986176, a: 1}
+  m_Intensity: 0.75
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2458,7 +2458,7 @@ MonoBehaviour:
   player: {fileID: 2142559421}
   target: {fileID: 0}
   healthPercentage: 0
-  frame: {fileID: 2800000, guid: e8343bd409b7b97419fdc11aaa7fb6d9, type: 3}
+  frame: {fileID: 2800000, guid: b91f9e101e79abd46bb14b87d63fb143, type: 3}
   framePosition:
     serializedVersion: 2
     x: 0
@@ -2596,7 +2596,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1707117295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 34.6, z: 30}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3431,7 +3431,7 @@ MonoBehaviour:
   opponent: {fileID: 0}
   damage: 10
   impactTime: 0
-  range: 10
+  range: 3
   maxHealth: 100
   health: 0
   maxMana: 100

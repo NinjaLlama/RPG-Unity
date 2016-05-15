@@ -10,8 +10,8 @@ public class EnemyHealth : MonoBehaviour {
 	public Rect framePosition;
 	public Texture2D healthBar;
 	public Rect healthBarPosition;
-	float horizontalDistance = 0.008f;
-	float verticalDistance = 0.09f;
+	float horizontalDistance = 0.099f;
+	float verticalDistance = 0.29f;
 	// Use this for initialization
 	void Start () {
 	
@@ -49,8 +49,8 @@ public class EnemyHealth : MonoBehaviour {
 
 	void drawHealth()
 	{
-		healthBarPosition.width = (framePosition.width-5) * healthPercentage;
-		healthBarPosition.height = framePosition.height-5;
+		healthBarPosition.width = (framePosition.width-80) * healthPercentage;
+		healthBarPosition.height = framePosition.height-18;
 		healthBarPosition.x = framePosition.x + (framePosition.width * horizontalDistance);
 		healthBarPosition.y = framePosition.y + (framePosition.height * verticalDistance);
 

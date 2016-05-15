@@ -49,9 +49,9 @@ public class Fighter : MonoBehaviour {
 	void Update () {
 		if(!isDead()){
 
-			if (Input.GetKeyUp (KeyCode.Space)) { //normal attack
-				attackFunction (KeyCode.Space);
-				lastInput = KeyCode.Space;
+			if (Input.GetKeyUp (KeyCode.Mouse0)) { //normal attack
+				attackFunction (KeyCode.Mouse0);
+				lastInput = KeyCode.Mouse0;
 			} else if(Input.GetKeyUp (KeyCode.Alpha1)){ //special attack
 				attackFunction (KeyCode.Alpha1);
 				lastInput = KeyCode.Alpha1;
@@ -260,7 +260,7 @@ public class Fighter : MonoBehaviour {
 
 
 	bool inRange(){
-		if (Vector3.Distance (transform.position, opponent.transform.position) < range)
+		if (opponent != null && Vector3.Distance (transform.position, opponent.transform.position) < range)
 			return true;
 		else
 			return false;

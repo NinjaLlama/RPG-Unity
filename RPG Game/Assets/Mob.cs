@@ -101,7 +101,7 @@ public class Mob : MonoBehaviour {
 
 	void dieMethod()
 	{
-		playerLevel.exp = playerLevel.exp + 20;
+		playerLevel.exp = playerLevel.exp + 105;
 		Destroy (gameObject, 5f);
 	}
 
