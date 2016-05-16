@@ -8,6 +8,7 @@ public class LevelSystem : MonoBehaviour {
 	public int maxExp;
 	public Fighter player;
 	public float expPercentage;
+	public AudioSource levelUp;
 	// Use this for initialization
 	void Start () {
 	
@@ -25,6 +26,7 @@ public class LevelSystem : MonoBehaviour {
 		if (exp >= maxExp) {
 			exp = exp - (int)(Mathf.Pow (level, 2) + 100);
 			level = level + 1;
+			levelUp.Play ();
 			LevelEffect();
 		}
 	}

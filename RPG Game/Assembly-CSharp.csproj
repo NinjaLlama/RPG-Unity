@@ -50,6 +50,7 @@
      <Compile Include="Assets\EnemyHealth.cs" />
      <Compile Include="Assets\Fighter.cs" />
      <Compile Include="Assets\LevelSystem.cs" />
+     <Compile Include="Assets\Medieval_House\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Mob.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <Compile Include="Assets\SkillSlot.cs" />
